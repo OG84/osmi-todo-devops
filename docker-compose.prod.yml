@@ -11,10 +11,17 @@ services:
       - NEO4J_AUTH
 
   api:
-    build: .
+    build: ../osmi-todo-api/
     ports:
       - 3000:3000
     environment:
       - NEO4J_AUTH
     depends_on:
       - "neo4j"
+
+  frontend:
+    build: ../osmi-todo-frontend/
+    ports:
+      - 80:80
+    depends_on:
+      - "api"

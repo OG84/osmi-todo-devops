@@ -36,4 +36,9 @@ The production mode starts up all required services:
 - Thodo nest.js Api
 - Thodo Angular Frontend
 
-Type `yarn docker-run` to compose the production stack.
+Type `yarn docker-run` to compose the production stack.  
+The Application can now be accessed on port 80.
+
+The startup takes a couple of minutes, because frontend and api images are rebuild each time.
+
+In production mode the frontend is accessing the backend on `http://thodo.th-brandenburg.de:3000/api/v1/todos`, so it wont work on your local machine yet.
