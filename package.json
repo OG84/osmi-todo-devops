@@ -1,0 +1,16 @@
+{
+  "name": "osmi-todo-devops",
+  "version": "1.0.0",
+  "description": "Starting and stopping the thodo stack",
+  "main": "index.js",
+  "repository": "git@github.com:OG84/osmi-todo-devops.git",
+  "author": "Christian Götze <c.goetze@gmx.eu>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "docker-run": "docker-compose -f docker-compose.prod.yml up -d",
+    "docker-run:dev": "docker-compose -f docker-compose.dev.yml up -d",
+    "docker-run:latest": "yarn git pull && docker-run",
+    "docker-stop": "docker-compose -f docker-compose.prod.yml down"
+  }
+}
