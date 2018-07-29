@@ -19,6 +19,21 @@ https://github.com/OG84/osmi-todo-api
 
 ## Start in development mode
 
-The development mode only ...
+The development mode starts up the following services:
+
+- NEO4J Graph Database
+
+Frontend and Api should be started seperately.
+
+Type `yarn docker-run:dev` to compose the dev stack.  
+For starting the frontend and api in dev mode please see the individual READMEs.
 
 ## Start in production mode
+
+The production mode starts up all required services:
+
+- NEO4J Graph Database
+- Thodo nest.js Api
+- Thodo Angular Frontend
+
+Type `yarn docker-run` to compose the production stack.
