@@ -4,7 +4,13 @@ This repository contains all files to automatically start and stop the Thodo sta
 
 ## Installation
 
-Please checkout all of the following repositories into a shared folder, e.g.:
+Please checkout all of the following repositories ...
+
+https://github.com/OG84/osmi-todo-devops  
+https://github.com/OG84/osmi-todo-frontend  
+https://github.com/OG84/osmi-todo-api  
+
+... into a shared folder, e.g.:
 
 \- osmi-todo  
 &nbsp;&nbsp;|- osmi-todo-devops  
