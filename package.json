@@ -8,8 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "docker-run": "docker-compose -f docker-compose.prod.yml up -d",
-    "docker-run:dev": "docker-compose -f docker-compose.dev.yml up -d",
+    "docker-run": "docker-compose -f docker-compose.prod.yml build && docker-compose -f docker-compose.prod.yml up -d",
+    "docker-run:dev": "docker-compose -f docker-compose.prod.yml build && docker-compose -f docker-compose.dev.yml up -d",
     "docker-run:latest": "yarn git pull && docker-run",
     "docker-stop": "docker-compose -f docker-compose.prod.yml down"
   }
