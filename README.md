@@ -42,3 +42,9 @@ The Application can now be accessed on port 80.
 The startup takes a couple of minutes, because frontend and api images are rebuild each time.
 
 If running the production mode on your local machine, the frontend is accessing the backend on `http://thodo.th-brandenburg.de:3000/api/v1/todos`, so it's not accessing your local api.
+
+## Important
+
+Make sure that every repository is up to date.
+
+Run `git pull` in each of them.
